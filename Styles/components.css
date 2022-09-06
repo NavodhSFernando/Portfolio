@@ -1,0 +1,34 @@
+@import 'animate.css';
+
+/* Left side button */
+.button_img {
+    width: 100px;
+    filter: invert();
+}
+
+.button--pan {
+    cursor: pointer;
+    padding: 2.5rem 8rem;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 0 3rem 3rem 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.button--pan span {
+    position: relative;
+    mix-blend-mode: difference;
+    display: flex;
+}
+
+.button--pan::before {
+    content: '';
+    background: #000;
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--pan:hover::before {
+    transform: translate3d(0, -100%, 0);
+}
