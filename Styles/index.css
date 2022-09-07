@@ -18,7 +18,7 @@
 
 .intro {
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -26,4 +26,83 @@
 
 .intro_head {
     margin: auto 0;
+}
+
+.intro_button_contain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.intro_button {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.work {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.work-contain {
+    height: 70%;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: grey;
+    overflow: hidden;
+}
+
+.work_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.6) contrast(150%);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 400px;
+    height: 1%;
+    padding: 0;
+    margin: 0 0.5rem;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
 }
