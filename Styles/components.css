@@ -2,33 +2,62 @@
 
 /* Left side button */
 .button_img {
-    width: 100px;
-    filter: invert();
+    font-size: 2.5rem;
 }
 
 .button--pan {
     cursor: pointer;
-    padding: 2.5rem 8rem;
+    padding: 2.5rem 4rem;
     background-color: #000;
     color: #fff;
     border: 2px solid black;
-    border-radius: 0 3rem 3rem 0;
+    border-radius: 0 4rem 4rem 0;
     position: absolute;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .button--pan span {
     position: relative;
     mix-blend-mode: difference;
     display: flex;
+    align-items: center;
 }
 
-.button--pan::before {
-    content: '';
-    background: #000;
-    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+.position1 {
+    left: 0;
+    top: 350;
 }
 
-.button--pan:hover::before {
-    transform: translate3d(0, -100%, 0);
+.position2 {
+    left: 0;
+    bottom: 0;
+}
+
+.button--pan2 {
+    cursor: pointer;
+    padding: 2.5rem 4rem;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 4rem 0 0 4rem;
+    position: absolute;
+    overflow: hidden;
+    text-decoration: none;
+    right: 0;
+}
+
+.button--pan2 span {
+    position: relative;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+}
+
+.position3 {
+    top: 470;
+}
+
+.position4 {
+    top: 450;
 }
