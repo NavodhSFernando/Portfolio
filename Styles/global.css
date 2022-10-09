@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'QuestaSans';
-    src: url('/fonts/FontsFree-Net-2-QuestaSansRegular.ttf') format("truetype");
+    src: url('../fonts/FontsFree-Net-2-QuestaSansRegular.ttf') format("truetype");
 }
 
 @font-face {
