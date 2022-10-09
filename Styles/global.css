@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: 'MarionBold';
-    src: url('/fonts/Marion\ Bold.ttf') format("truetype");
+    src: url('../fonts/Marion\ Bold.ttf') format("truetype");
 }
 
 @font-face {
     font-family: 'MarionRegular';
-    src: url('/fonts/Marion\ Regular.ttf') format("truetype");
+    src: url('../fonts/Marion\ Regular.ttf') format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
