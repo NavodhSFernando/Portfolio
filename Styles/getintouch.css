@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    border: 3px solid rgb(182, 182, 182);
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: "MarionBold";
+}
+
+.form-content {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: "MarionRegular";
+}
+
+.form-content input[type=text],
+.form-content input[type=email],
+.form-content select,
+.textarea {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: rgb(182, 182, 182);
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+    font-family: "QuestaSans";
+}
+
+
+.btn-primary {
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: black;
+}
+
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: rgb(182, 182, 182);
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    transition: none;
+    margin-bottom: 14px;
+    font-family: "QuestaSans";
+}
+
+.mv-up {
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.anchor_site {
+    font-family: "QuestaSans";
+    color: #fff;
+    margin-left: auto;
+}
+
+
+@media (max-width: 576px) {
+    .form-holder .form-content {
+        padding: 40px;
+    }
+
+    .form-content .form-items {
+        border: 3px solid rgb(182, 182, 182);
+        padding: 20px;
+        display: inline-block;
+        width: 100%;
+        min-width: 400px;
+
+    }
+}

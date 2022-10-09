@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/global.css">
+    <link rel="stylesheet" href="./Styles/getintouch.css">
+    <title>Get in Touch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-body">
+            <div class="row">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Get in Touch</h3>
+                            <p>Fill in the details below.</p>
+                            <form>
+
+                                <div class="col-md-12">
+                                    <input type="text" name="name" id="name" placeholder="Full Name">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="email" name="email" id="email" placeholder="E-mail Address">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <select id="selection" class="form-select mt-3">
+                                        <option selected disabled value="">Position</option>
+                                        <option value="Grpahic Design">Graphic Design</option>
+                                        <option value="Web Design">Web Design</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="textarea" name="message" placeholder="Message" id="textarea"
+                                        cols="30" rows="10"></textarea>
+                                </div>
+
+                                <div class="form-button mt-3 d-flex align-items-center">
+                                    <button id="submit" type="submit" class="btn btn-primary" onclick="validateform()"
+                                        value="submit">Submit</button>
+                                    <a class="anchor_site" href="./index.html">Back to Site </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./getintouch.js"></script>
+</body>
+
+</html>
