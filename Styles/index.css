@@ -1,20 +1,19 @@
 .hero {
     width: 100vw;
-    height: 92vh;
+    height: 1080px;
     position: relative;
 }
 
-@media (min-width:768px) {
-    .hero_img {
-        max-width: 100%;
-        height: auto;
-        padding-top: 8rem;
-        filter: drop-shadow(1rem 1rem 1rem grey);
-    }
+.hero_img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    filter: drop-shadow(1rem 1rem 1rem grey);
+}
 
-    .hero_head {
-        padding-top: 8rem;
-    }
+.hero_head {
+    padding-top: 8rem;
+    font-family: "MarionBold";
 }
 
 .background_top {
@@ -25,16 +24,65 @@
     top: 0;
 }
 
+.marquee_container {
+    margin-bottom: 35px;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+}
+
+.marquee_wrapper {
+    animation: marquee 35s linear infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee_text {
+    display: inline-block;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 200px;
+    letter-spacing: -10;
+    margin: 0;
+    color: rgba(255, 255, 255, .7);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@media (max-width:768px) {
+    .marquee_text {
+        font-size: 100px !important;
+        letter-spacing: -5 !important;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
 .intro {
     width: 100vw;
-    height: 75vh;
+    height: 810px;
     position: relative;
     display: flex;
     align-items: center;
 }
 
 .intro_head {
-    margin: auto 0;
+    font-family: "QuestaSans";
+    font-weight: bolder;
+    line-height: 129%;
+}
+
+.intro_text {
+    font-family: "QuestaSans";
 }
 
 .intro_button_contain {
@@ -50,7 +98,7 @@
 
 .work {
     width: 100vw;
-    height: 100vh;
+    height: 1080px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -71,6 +119,53 @@
     width: 100%;
     height: 100%;
     filter: brightness(.6) contrast(150%);
+}
+
+.work_top_head {
+    font-family: "MarionBold";
+}
+
+.work_head {
+    font-family: "QuestaSans";
+    font-weight: bolder;
+}
+
+.work_text {
+    font-family: "QuestaSans";
+}
+
+.testimonials {
+    width: 100vw;
+    height: 810px;
+    position: relative;
+}
+
+.testimonials_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials_img {
+    border-radius: 50%;
+    width: 75%;
+    border: 1px solid black;
+}
+
+.testimonials_head {
+    font-family: "QuestaSans";
+    font-weight: bolder;
+}
+
+.testimonials_text1 {
+    font-family: "MarionBold";
+}
+
+.testimonials_text2 {
+    font-family: 'Overpass Mono', monospace;
+    letter-spacing: -15%;
 }
 
 .carousel-caption {
@@ -118,26 +213,6 @@
     transition: opacity .6s ease;
 }
 
-.testimonials {
-    width: 100vw;
-    height: 75vh;
-    position: relative;
-}
-
-.testimonials_inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-.testimonials_img {
-    border-radius: 50%;
-    width: 75%;
-    border: 1px solid black;
-}
-
 .carousel-control-prev-icon {
     filter: invert();
 }
@@ -172,7 +247,7 @@
 }
 
 .client_list {
-    height: 100vh;
+    height: 1080px;
     width: 100vw;
     position: relative;
     display: grid;
@@ -256,7 +331,7 @@
 
 .cta {
     width: 100vw;
-    height: 85vh;
+    height: 918px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -282,4 +357,189 @@
     overflow: hidden;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: "QuestaSans";
+}
+
+.cta_head {
+    font-family: "MarionBold";
+}
+
+@media (max-width:576px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero_img {
+        max-width: 60%;
+        padding-top: 0;
+    }
+
+    .hero_head {
+        padding-top: 0;
+    }
+
+    .intro {
+        height: 450px;
+    }
+
+    .intro_button_contain {
+        margin-top: 5rem;
+    }
+
+    .work {
+        height: 500px;
+    }
+
+    .testimonials {
+        height: 400px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .client_list {
+        height: 450px;
+    }
+
+    .cta {
+        height: 500px;
+    }
+
+    .rule {
+        margin: 5rem 0;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    .hero {
+        height: 575px;
+    }
+
+    .hero_img {
+        max-width: 60%;
+        padding-top: 0;
+    }
+
+    .intro {
+        height: 550px;
+    }
+
+    .intro_button_contain {
+        margin-top: 6.5rem;
+    }
+
+    .work {
+        height: 550px;
+    }
+
+    .testimonials {
+        height: 450px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .client_list {
+        height: 550px;
+    }
+
+    .cta {
+        height: 550px;
+    }
+
+    .rule {
+        margin: 6.5rem 0;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .hero {
+        height: 600px;
+    }
+
+    .marquee_text {
+        font-size: 150px;
+        letter-spacing: -5;
+    }
+
+    .intro {
+        height: 550px;
+    }
+
+    .intro_button_contain {
+        margin-top: 8rem;
+    }
+
+    .work {
+        height: 650px;
+    }
+
+    .testimonials {
+        height: 550px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .client_list {
+        height: 600px;
+    }
+
+    .cta {
+        height: 700px;
+    }
+
+    .rule {
+        margin: 7.5rem 0;
+    }
+}
+
+@media (min-width:993px) and (max-width:1400px) {
+    .hero {
+        height: 800px;
+    }
+
+    .marquee_text {
+        font-size: 175px;
+        letter-spacing: -10;
+    }
+
+    .intro {
+        height: 750px;
+    }
+
+    .intro_button_contain {
+        margin-top: 9rem;
+    }
+
+    .work {
+        height: 950px;
+    }
+
+    .testimonials {
+        height: 850px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .client_list {
+        height: 850px;
+    }
+
+    .cta {
+        height: 850px;
+    }
+
+    .rule {
+        margin: 9rem 0;
+    }
 }

@@ -1,9 +1,33 @@
 @import url(./components.css);
 @import url(./resets.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("./locomotive-scroll.css");
+
+@font-face {
+    font-family: 'QuestaSans';
+    src: url('/fonts/FontsFree-Net-2-QuestaSansRegular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'MarionBold';
+    src: url('/fonts/Marion\ Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'MarionRegular';
+    src: url('/fonts/Marion\ Regular.ttf') format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
 
 html {
     font-size: 18px;
+}
+
+@media (max-width:992px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 body {
@@ -36,8 +60,9 @@ p {
 
 nav {
     width: 100vw;
-    height: 8vh;
+    height: 75px;
     background-color: rgb(182, 182, 182);
+    font-family: "MarionRegular";
 }
 
 nav .container-fluid {
@@ -50,10 +75,11 @@ nav .container-fluid {
 
 .navbar {
     padding: 1rem 0;
+    margin: -1;
 }
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         font-size: 1.25rem;
@@ -72,13 +98,13 @@ nav .container-fluid {
 
 .foot {
     width: 100vw;
-    height: 15vh;
+    height: 150px;
     position: relative;
     overflow: hidden;
-    display: flex;
     align-items: center;
     margin-bottom: auto;
     background-color: rgb(182, 182, 182);
+    margin: -1;
 }
 
 .foot_socials {
@@ -96,4 +122,69 @@ nav .container-fluid {
 .foot_text {
     margin-left: auto;
     margin-right: 6.5rem;
+    font-family: "MarionRegular";
+}
+
+@media (max-width:576px) {
+
+    .navbar-toggler-icon,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .foot {
+        height: 100px;
+    }
+
+    .foot_text {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width:577px) and (max-width:768px) {
+
+    .navbar-toggler-icon,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .foot {
+        height: 100px;
+    }
+
+    .foot_text {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .nav {
+        height: 65px;
+    }
+
+    .foot {
+        height: 120px;
+    }
+
+    .foot_text {
+        margin-right: 6.5rem;
+    }
+
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .nav {
+        height: 65px;
+    }
+
+    .foot {
+        height: 120px;
+    }
+
+    .foot_text {
+        margin-right: 6.5rem;
+    }
+
 }
