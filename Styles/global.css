@@ -75,13 +75,21 @@ nav .container-fluid {
 
 .navbar {
     padding: 1rem 0;
-    margin: -1;
+    margin: -1 0;
 }
 
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
         font-size: 1.25rem;
     }
 }
@@ -96,6 +104,20 @@ nav .container-fluid {
     background-color: inherit;
 }
 
+.nav_button {
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 3rem;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "QuestaSans";
+}
+
 .foot {
     width: 100vw;
     height: 150px;
@@ -104,7 +126,7 @@ nav .container-fluid {
     align-items: center;
     margin-bottom: auto;
     background-color: rgb(182, 182, 182);
-    margin: -1;
+    margin: -1 0;
 }
 
 .foot_socials {
@@ -126,10 +148,8 @@ nav .container-fluid {
 }
 
 @media (max-width:576px) {
-
-    .navbar-toggler-icon,
-    .navbar-toggler {
-        display: none !important;
+    .container {
+        padding: 0 3rem;
     }
 
     .foot {
@@ -143,12 +163,6 @@ nav .container-fluid {
 }
 
 @media (min-width:577px) and (max-width:768px) {
-
-    .navbar-toggler-icon,
-    .navbar-toggler {
-        display: none !important;
-    }
-
     .foot {
         height: 100px;
     }
