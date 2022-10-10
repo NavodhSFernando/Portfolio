@@ -24,6 +24,15 @@ html {
     font-size: 18px;
 }
 
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 @media (max-width:992px) {
     html {
         font-size: 12px;
@@ -80,9 +89,15 @@ nav .container-fluid {
 
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
         font-size: 1.25rem;
+        padding-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .navbar {
+        padding: 3rem;
     }
 }
 

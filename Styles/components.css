@@ -24,13 +24,15 @@
 }
 
 .position1 {
-    left: 0;
+    left: -30;
     top: 350;
+    transition: all 2s;
 }
 
 .position2 {
-    left: 0;
+    left: -30;
     bottom: 0;
+    transition: all 2s;
 }
 
 .button--pan2 {
@@ -43,7 +45,6 @@
     position: absolute;
     overflow: hidden;
     text-decoration: none;
-    right: 0;
 }
 
 .button--pan2 span {
@@ -56,11 +57,29 @@
 
 .position3 {
     top: 540;
-    right: 0;
+    right: -30;
+    transition: all 2s;
 }
 
 .position4 {
     top: 450;
+    right: -30;
+    transition: all 2s;
+}
+
+.position1:hover {
+    left: 0;
+}
+
+.position2:hover {
+    left: 0;
+}
+
+.position3:hover {
+    right: 0;
+}
+
+.position4:hover {
     right: 0;
 }
 
