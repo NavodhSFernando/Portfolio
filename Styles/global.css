@@ -175,6 +175,10 @@ nav .container-fluid {
         margin-right: 0;
     }
 
+    .foot_socials {
+        margin: 0 2rem;
+    }
+
 }
 
 @media (min-width:577px) and (max-width:768px) {
